@@ -8,6 +8,10 @@
     {
       "name": "DEBUG",
       "value": "true"
+    },
+    {
+      "name": "TEST",
+      "value": "true"
     }
   ]
 }
