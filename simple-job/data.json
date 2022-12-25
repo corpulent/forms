@@ -1,0 +1,13 @@
+{
+  "name": "simple-job",
+  "namespace": "argo",
+  "image": "perl:5.34.0",
+  "cmd": "perl",
+  "args": "-Mbignum=bpi, -wle, print bpi(2000)",
+  "env": [
+    {
+      "name": "DEBUG",
+      "value": "true"
+    }
+  ]
+}

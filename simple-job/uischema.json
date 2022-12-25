@@ -1,0 +1,23 @@
+{
+  "ui:order": ["name", "namespace", "image", "cmd", "args", "env"],
+  "name": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "namespace": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "image": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "args": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "cmd": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  }
+}

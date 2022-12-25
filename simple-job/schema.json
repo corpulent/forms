@@ -1,0 +1,50 @@
+{
+  "title": "Run a simple job",
+  "description": "Run a simple job using perl:5.34.0 image",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "default": "",
+      "minLength": 3
+    },
+    "namespace": {
+      "type": "string",
+      "title": "Namespace",
+      "default": "",
+      "minLength": 3
+    },
+    "image": {
+      "type": "string",
+      "title": "Image",
+      "default": "",
+      "minLength": 3
+    },
+    "cmd": {
+      "type": "string",
+      "title": "Command",
+      "default": "",
+      "minLength": 1
+    },
+    "args": {
+      "type": "string",
+      "title": "Arguments",
+      "default": ""
+    },
+    "env": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
