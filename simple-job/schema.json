@@ -15,24 +15,24 @@
       "default": "",
       "minLength": 3
     },
-    "image": {
+    "spec.template.spec.containers[0].image": {
       "type": "string",
       "title": "Image",
       "default": "",
       "minLength": 3
     },
-    "cmd": {
+    "spec.template.spec.containers[0].cmd": {
       "type": "string",
       "title": "Command",
       "default": "",
       "minLength": 1
     },
-    "args": {
+    "spec.template.spec.containers[0].args": {
       "type": "string",
       "title": "Arguments",
       "default": ""
     },
-    "env": {
+    "spec.template.spec.containers[0].env": {
       "type": "array",
       "items": {
         "type": "object",

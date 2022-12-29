@@ -1,5 +1,12 @@
 {
-  "ui:order": ["metadata.name", "metadata.namespace", "image", "cmd", "args", "env"],
+  "ui:order": [
+    "metadata.name",
+    "metadata.namespace",
+    "spec.template.spec.containers[0].image",
+    "spec.template.spec.containers[0].cmd",
+    "spec.template.spec.containers[0].args",
+    "spec.template.spec.containers[0].env"
+  ],
   "metadata.name": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
@@ -8,15 +15,15 @@
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   },
-  "image": {
+  "spec.template.spec.containers[0].image": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   },
-  "args": {
+  "spec.template.spec.containers[0].args": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   },
-  "cmd": {
+  "spec.template.spec.containers[0].cmd": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   }
