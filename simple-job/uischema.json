@@ -4,7 +4,7 @@
     "metadata.namespace",
     "spec.template.spec.containers[0].name",
     "spec.template.spec.containers[0].image",
-    "spec.template.spec.containers[0].cmd",
+    "spec.template.spec.containers[0].command",
     "spec.template.spec.containers[0].args",
     "spec.template.spec.containers[0].env"
   ],
