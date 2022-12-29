@@ -1,0 +1,39 @@
+{
+  "ui:order": [
+    "metadata.name",
+    "metadata.namespace",
+    "spec.template.spec.containers[0].name",
+    "spec.template.spec.containers[0].image",
+    "spec.template.spec.containers[0].command",
+    "spec.template.spec.containers[0].args",
+    "spec.template.spec.containers[0].env"
+  ],
+  "metadata.name": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "metadata.namespace": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "spec.template.spec.containers[0].name": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "spec.template.spec.containers[0].image": {
+    "ui:emptyValue": "",
+    "ui:autocomplete": "off"
+  },
+  "spec.template.spec.containers[0].args": {
+    "items": {
+      "ui:emptyValue": "",
+      "ui:autocomplete": "off"
+    }
+  },
+  "spec.template.spec.containers[0].command": {
+    "items": {
+      "ui:emptyValue": "",
+      "ui:autocomplete": "off"
+    }
+  }
+}

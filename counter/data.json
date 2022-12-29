@@ -1,0 +1,16 @@
+{
+  "metadata.name": "counter",
+  "metadata.namespace": "argo",
+  "spec.template.spec.containers[0].name": "counter",
+  "spec.template.spec.containers[0].image": "ubuntu:latest",
+  "spec.template.spec.containers[0].command": ["/bin/bash", "-c", "--"],
+  "spec.template.spec.containers[0].args": ["q=0; while [[ q -lt 300 ]]; do sleep 1 && ((q++)); echo $q; done"],
+  "spec.template.spec.containers[0].env": [
+    {
+      "name": "DEBUG",
+      "value": "true"
+    }
+  ],
+  "spec.template.spec.restartPolicy": "Never",
+  "spec.backoffLimit": 0
+}
