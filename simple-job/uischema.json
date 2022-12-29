@@ -1,10 +1,10 @@
 {
-  "ui:order": ["name", "namespace", "image", "cmd", "args", "env"],
-  "name": {
+  "ui:order": ["metadata.name", "metadata.namespace", "image", "cmd", "args", "env"],
+  "metadata.name": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   },
-  "namespace": {
+  "metadata.namespace": {
     "ui:emptyValue": "",
     "ui:autocomplete": "off"
   },

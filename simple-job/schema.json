@@ -3,13 +3,13 @@
   "description": "Run a simple job using perl:5.34.0 image",
   "type": "object",
   "properties": {
-    "name": {
+    "metadata.name": {
       "type": "string",
       "title": "Name",
       "default": "",
       "minLength": 3
     },
-    "namespace": {
+    "metadata.namespace": {
       "type": "string",
       "title": "Namespace",
       "default": "",
