@@ -27,7 +27,7 @@
       "default": "",
       "minLength": 3
     },
-    "spec.template.spec.containers[0].cmd": {
+    "spec.template.spec.containers[0].command": {
       "type": "array",
       "title": "Command",
       "items": {

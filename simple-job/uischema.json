@@ -30,7 +30,7 @@
       "ui:autocomplete": "off"
     }
   },
-  "spec.template.spec.containers[0].cmd": {
+  "spec.template.spec.containers[0].command": {
     "items": {
       "ui:emptyValue": "",
       "ui:autocomplete": "off"
