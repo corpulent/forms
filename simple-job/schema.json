@@ -22,15 +22,20 @@
       "minLength": 3
     },
     "spec.template.spec.containers[0].cmd": {
-      "type": "string",
+      "type": "array",
       "title": "Command",
-      "default": "",
-      "minLength": 1
+      "items": {
+        "type": "string",
+        "default": ""
+      }
     },
     "spec.template.spec.containers[0].args": {
-      "type": "string",
-      "title": "Arguments",
-      "default": ""
+      "type": "array",
+      "title": "Args",
+      "items": {
+        "type": "string",
+        "default": ""
+      }
     },
     "spec.template.spec.containers[0].env": {
       "type": "array",

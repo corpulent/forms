@@ -20,11 +20,15 @@
     "ui:autocomplete": "off"
   },
   "spec.template.spec.containers[0].args": {
-    "ui:emptyValue": "",
-    "ui:autocomplete": "off"
+    "items": {
+      "ui:emptyValue": "",
+      "ui:autocomplete": "off"
+    }
   },
   "spec.template.spec.containers[0].cmd": {
-    "ui:emptyValue": "",
-    "ui:autocomplete": "off"
+    "items": {
+      "ui:emptyValue": "",
+      "ui:autocomplete": "off"
+    }
   }
 }

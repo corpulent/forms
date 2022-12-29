@@ -2,8 +2,8 @@
   "metadata.name": "simple-job",
   "metadata.namespace": "argo",
   "spec.template.spec.containers[0].image": "perl:5.34.0",
-  "spec.template.spec.containers[0].cmd": "perl",
-  "spec.template.spec.containers[0].args": "-Mbignum=bpi, -wle, print bpi(2000)",
+  "spec.template.spec.containers[0].cmd": ["perl"],
+  "spec.template.spec.containers[0].args": ["-Mbignum=bpi", "-wle", "print bpi(2000)"],
   "spec.template.spec.containers[0].env": [
     {
       "name": "DEBUG",
