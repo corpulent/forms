@@ -15,6 +15,12 @@
       "default": "",
       "minLength": 3
     },
+    "spec.template.spec.containers[0].name": {
+      "type": "string",
+      "title": "Contaienr name",
+      "default": "",
+      "minLength": 3
+    },
     "spec.template.spec.containers[0].image": {
       "type": "string",
       "title": "Image",
