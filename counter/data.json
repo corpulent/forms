@@ -9,6 +9,10 @@
     {
       "name": "DEBUG",
       "value": "true"
+    },
+    {
+      "name": "TEST",
+      "value": "{{secrets.TEST}}"
     }
   ],
   "spec.template.spec.restartPolicy": "Never",
