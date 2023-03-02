@@ -1,4 +1,6 @@
 ---
+apiVersion: batch/v1
+kind: Job
 metadata:
   name: counter
   namespace: argo
@@ -6,16 +8,16 @@ spec:
   backoffLimit: 0
   template:
     spec:
-      restartPolicy: Never
       containers:
-      - name: counter
-        image: ubuntu:latest
-        command:
-        - "/bin/bash"
-        - "-c"
-        - "--"
-        args:
+      - args:
         - q=0; while [[ q -lt 300 ]]; do sleep 1 && ((q++)); echo $q; done
+        command:
+        - /bin/bash
+        - -c
+        - --
         env:
         - name: DEBUG
-          value: 'true'
+          value: "true"
+        image: ubuntu:latest
+        name: counter
+      restartPolicy: Never
