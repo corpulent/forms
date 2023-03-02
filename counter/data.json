@@ -24,6 +24,10 @@
               {
                 "name": "DEBUG",
                 "value": "true"
+              },
+              {
+                "name": "TEST",
+                "value": "{{secrets.TEST}}"
               }
             ]
           }
