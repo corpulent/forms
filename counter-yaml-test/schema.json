@@ -17,14 +17,17 @@
     },
     "spec.template.spec.containers[0].name": {
       "type": "string",
-      "title": "Contaienr name",
+      "title": "Container name",
       "default": "",
       "minLength": 3
     },
     "spec.template.spec.containers[0].image": {
       "type": "string",
       "title": "Image",
-      "default": "",
+      "items": {
+        "type": "string",
+        "default": ""
+      },
       "minLength": 3
     },
     "spec.template.spec.containers[0].command": {
