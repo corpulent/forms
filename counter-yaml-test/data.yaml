@@ -1,0 +1,21 @@
+---
+metadata:
+  name: counter
+  namespace: argo
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: counter
+        image: ubuntu:latest
+        command:
+        - "/bin/bash"
+        - "-c"
+        - "--"
+        args:
+        - q=0; while [[ q -lt 300 ]]; do sleep 1 && ((q++)); echo $q; done
+        env:
+        - name: DEBUG
+          value: 'true'

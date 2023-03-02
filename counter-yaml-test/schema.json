@@ -1,0 +1,61 @@
+{
+  "title": "Counter",
+  "description": "Run a count to 100",
+  "type": "object",
+  "properties": {
+    "metadata.name": {
+      "type": "string",
+      "title": "Name",
+      "default": "",
+      "minLength": 3
+    },
+    "metadata.namespace": {
+      "type": "string",
+      "title": "Namespace",
+      "default": "",
+      "minLength": 3
+    },
+    "spec.template.spec.containers[0].name": {
+      "type": "string",
+      "title": "Contaienr name",
+      "default": "",
+      "minLength": 3
+    },
+    "spec.template.spec.containers[0].image": {
+      "type": "string",
+      "title": "Image",
+      "default": "",
+      "minLength": 3
+    },
+    "spec.template.spec.containers[0].command": {
+      "type": "array",
+      "title": "Command",
+      "items": {
+        "type": "string",
+        "default": ""
+      }
+    },
+    "spec.template.spec.containers[0].args": {
+      "type": "array",
+      "title": "Args",
+      "items": {
+        "type": "string",
+        "default": ""
+      }
+    },
+    "spec.template.spec.containers[0].env": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
