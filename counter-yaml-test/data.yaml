@@ -9,15 +9,22 @@ spec:
   template:
     spec:
       containers:
-      - args:
-        - q=0; while [[ q -lt 300 ]]; do sleep 1 && ((q++)); echo $q; done
-        command:
-        - /bin/bash
-        - -c
-        - --
-        env:
-        - name: DEBUG
-          value: "true"
-        image: ubuntu:latest
-        name: counter
+        - args:
+            - q=0; while [[ q -lt 300 ]]; do sleep 1 && ((q++)); echo $q; done
+          command:
+            - /bin/bash
+            - -c
+            - --
+          env:
+            - name: DEBUG
+              value: "true"
+            - name: SECRET_TEST
+              value: {{secrets.SECRET_TEST}}
+            - name": GITHUB_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: github-access-token
+                  key: token
+          image: ubuntu:latest
+          name: counter
       restartPolicy: Never
