@@ -3,7 +3,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: counter
-  namespace: argo
+  namespace: kubefill
 spec:
   backoffLimit: 0
   template:
