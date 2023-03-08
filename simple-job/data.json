@@ -1,7 +1,7 @@
 {
   "metadata": {
     "name": "simple-job",
-    "namespace": "argo"
+    "namespace": "kubefill"
   },
   "spec": {
     "backoffLimit": 0,
