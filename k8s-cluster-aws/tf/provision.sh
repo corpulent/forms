@@ -2,4 +2,4 @@
 
 terraform init
 terraform validate
-terraform apply
+terraform apply -auto-approve
